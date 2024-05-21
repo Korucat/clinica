@@ -1,11 +1,19 @@
 package Clinica;
 
+import Basa.Database;
+
 public class HistoriVisits {
     private User client;
     private Card card;
     private String dateVisit;
     private Doctors doctors;
 
+
+    private Database database;
+
+    public HistoriVisits(Database database) {
+        this.database = database;
+    }
     public HistoriVisits(User client, Card card, String dateVisit, Doctors doctors) {
         this.client = client;
         this.card = card;
@@ -46,4 +54,7 @@ public class HistoriVisits {
     public void setDoctors(Doctors doctors) {
         this.doctors = doctors;
     }
+
+
+
 }

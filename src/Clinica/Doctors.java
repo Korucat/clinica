@@ -37,4 +37,13 @@ public class Doctors {
 
         this.priceDoctor = priceDoctor;
     }
+
+    @Override
+    public String toString() {
+        return "Doctors{" +
+                "Имя доктора='" + nameDoctor + '\'' +
+                ",Прайс=" + priceDoctor +
+                ", Специальность='" + service + '\'' +
+                '}';
+    }
 }

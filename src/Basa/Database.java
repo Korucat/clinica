@@ -7,6 +7,7 @@ import Clinica.User;
 import Lib.ArrayListCustom;
 
 import javax.print.Doc;
+import java.io.BufferedReader;
 import java.util.ArrayList;
 
 public class Database {
@@ -107,6 +108,19 @@ public class Database {
         for (int i = 0; i < users.getSize(); i++) {
             System.out.println(users.get(i));
         }
+
+
+    }
+
+    public void printHistoriVisits() {
+        for (int i = 0; i < cards.getSize(); i++) {
+            System.out.println(cards.get(i));
+        }
+
+        //*  public void addVisits(HistoriVisits visist) {
+//
+        //         historiVisits.add(visits);
+        //  }
 
 
     }

@@ -22,6 +22,7 @@ public class Main {
         System.out.println("2.Ввести данные врача");
         System.out.println("3.Получить список всех пациентов");
         System.out.println("4.Открыть карту пациента");
+        System.out.println("5.Получить список всех докторов");
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
@@ -42,19 +43,20 @@ public class Main {
 
 
                     case "3": {
-                        Menu.printUser(reader);
+                        Menu.printUser();
                         break;
                     }
 
 
+                    case "4": {
+                        Menu.createCard(reader);
+                        break;
+                    }
 
-                        case "4": {
-                            Menu.createCard(reader);
-                            break;
-                        }
-
-
-
+                    case "5": {
+                        Menu.printDoctors();
+                        break;
+                    }
 
 
                     default: {
@@ -67,8 +69,9 @@ public class Main {
                 System.out.println("2.Ввести данные врача");
                 System.out.println("3.Получить список всех пациентов");
                 System.out.println("4.Открыть карту пациента");
+                System.out.println("5.Получить список всех докторов");
 
-                } while (input != "-1");
+            } while (input != "-1");
 
             if (input == "-1") {
                 System.out.println("Работа программы успешно завершена");
@@ -77,8 +80,6 @@ public class Main {
         } catch (IOException exception) {
             System.out.println(exception.getMessage());
         }
-
-
 
 
     }

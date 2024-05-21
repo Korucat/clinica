@@ -62,11 +62,13 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", documentNumber='" + documentNumber + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                "Имя пациента='" + name + '\'' +
+                ", Возраст=" + age +
+                ", Серия и номер паспорта='" + documentNumber + '\'' +
+                ", Номер телефона='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
+
+
 }

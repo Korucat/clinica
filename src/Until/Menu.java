@@ -76,9 +76,19 @@ public class Menu {
 
     }
 
-    public static void printUser(BufferedReader reader) {
-        UserServis.printUser();
+    public static void printUser() {
+        userServis.printUser();
     }
+
+
+    public static void printDoctors() {
+        doctorServis.printDoctors();
+    }
+
+
+
+
+
 }
 
 
