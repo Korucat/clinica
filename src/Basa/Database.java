@@ -23,6 +23,23 @@ public class Database {
         users = new ArrayListCustom<>(10);
     }
 
+
+    public void setUsers(ArrayListCustom<User> users) {
+        this.users = users;
+    }
+
+    public void setCards(ArrayListCustom<Card> cards) {
+        this.cards = cards;
+    }
+
+    public void setDoctors(ArrayListCustom<Doctors> doctors) {
+        this.doctors = doctors;
+    }
+
+    public void setHistoriVisits(ArrayListCustom<HistoriVisits> historiVisits) {
+        this.historiVisits = historiVisits;
+    }
+
     public void addUser(User user) {
 
         for (int i = 0; i < users.getSize(); i++) {
